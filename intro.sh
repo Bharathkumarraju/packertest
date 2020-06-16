@@ -20,6 +20,7 @@ i.e. official ubuntu cloud guest Amazon machine images (or) Canonical ubuntu clo
 https://help.ubuntu.com/community/EC2StartersGuide
 
 Official Ubuntu Cloud Guest Amazon Machine Images (AMIs)
+---------------------------------------------------------------------------------------->
 
 The Official AMI Ids can be obtained from http://cloud-images.ubuntu.com/locator/ec2/.
 Official Ubuntu AMIs are published by the 'Canonical' user, with Amazon ID '099720109477'.
@@ -27,3 +28,11 @@ Images containing the string 'ubuntu' but not owned by that ID are not official 
 
 Release images can be found at http://cloud-images.ubuntu.com/releases/,
 for example 14.04 LTS Trusty Tahr can be found under http://cloud-images.ubuntu.com/releases/14.04/release/
+
+
+For redhat:
+------------->
+https://access.redhat.com/articles/2962171
+
+
+
