@@ -30,6 +30,15 @@ Release images can be found at http://cloud-images.ubuntu.com/releases/,
 for example 14.04 LTS Trusty Tahr can be found under http://cloud-images.ubuntu.com/releases/14.04/release/
 
 
+ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-20200610
+
+ami-0a0ddd875a1ea2c7f
+
+ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-20200610
+ami-0a0ddd875a1ea2c7f
+099720109477/ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-20200610
+099720109477
+
 For redhat:
 ------------->
 https://access.redhat.com/articles/2962171
