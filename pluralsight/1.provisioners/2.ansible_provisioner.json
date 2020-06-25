@@ -1,0 +1,47 @@
+{
+  "builders": [
+    {
+      "type": "amazon-ebs",
+      "region": "us-west-2",
+      "source_ami": "ami-9abea4fb",
+      "instance_type": "t2.micro",
+      "ssh_username": "ubuntu",
+      "ami_name": "MiddleTeir-bharath",
+      "ami_description": "Amazing AMI designed by bharath",
+      "tags": {
+        "role": "MiddleTier"
+      },
+      "run_tags": {
+        "role": "buildSystem"
+      }
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "ansible.sh"
+    },
+    {
+      "type": "file",
+      "source": "ToUpload/",
+      "destination": "/tmp"
+    },
+    {
+      "type": "shell",
+      "script": "Scripts/nginx.sh"
+    },
+    {
+      "type": "shell",
+      "inline": [
+              "sudo apt-get install -y supervisor",
+              "sudo cp /tmp/app /usr/local/bin/app",
+              "sudo supervisorctl reread",
+              "sudo supervisorctl update"
+      ]
+    },
+    {
+      "type": "ansible-local",
+      "playbook_file": "./playbook.yml"
+    }
+  ]
+}
